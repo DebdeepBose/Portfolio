@@ -71,7 +71,7 @@
         </div>
       </div>
       <div class="pfp slideinright">
-        <!-- Slide in from Right -->
+
         <div class="circle4border">
           <div class="circle4pic">
             <img src="pfp1.png">
@@ -108,7 +108,7 @@
             efficient, scalable, and impactful software solutions.
           </h3>
 
-          <!-- Modified Button with Download Icon -->
+     
           <button class="cv-btn" id="download-resume-btn">
             <span class="button__text">Get Resume</span>
             <span class="button__icon">
@@ -292,7 +292,7 @@
             grabCursor: true,
             centeredSlides: true,
             slidesPerView: "auto",
-            initialSlide: Math.floor(document.querySelectorAll('.swiper-slide').length / 2), // Set middle slide as default
+            initialSlide: Math.floor(document.querySelectorAll('.swiper-slide').length / 2), 
             coverflowEffect: {
               rotate: 50,
               stretch: 0,
@@ -408,13 +408,13 @@
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
 
-    // Disable input fields and button
+  
     document.getElementById("name").disabled = true;
     document.getElementById("email").disabled = true;
     document.getElementById("message").disabled = true;
     document.getElementById("sendBtn").disabled = true;
 
-    // Show loading message
+
     document.getElementById("loading-message").style.display = "flex";
 
     emailjs.send("service_e9e08iu", "template_7kd6dvj", {
@@ -422,13 +422,12 @@
       email: email,
       message: message,
     }).then(function(response) {
-      // Hide loading and show success
+
       document.getElementById("loading-message").style.display = "none";
       setTimeout(function() {
         document.getElementById("success-message").style.display = "flex";
       }, 2000);
 
-      // Reset everything after some time
       setTimeout(function() {
         document.getElementById("name").value = "";
         document.getElementById("email").value = "";
@@ -446,10 +445,9 @@
     });
   });
 
-  // Resume download
   document.getElementById("download-resume-btn").addEventListener("click", function () {
     const link = document.createElement("a");
-    link.href = "Debdeep_Bose Resume.pdf"; // Update path if needed
+    link.href = "Debdeep_Bose Resume.pdf"; 
     link.download = "Debdeep_Bose Resume.pdf";
     document.body.appendChild(link);
     link.click();
