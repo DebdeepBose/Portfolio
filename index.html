@@ -1,0 +1,466 @@
+<html lang="en">
+
+<head>
+  <title>DebdeepBose's Portfolio</title>
+
+    <link rel="icon" href="logo.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="p1.css" >
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" >
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" >
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({
+              publicKey: "YHHOSZY0PRhA7_wuM",
+            });
+        })();
+    </script>
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li class="nav-name">Debdeep</li>
+      <li class="nav-elements" onclick="scrollToHome()">Home</li>
+      <li class="nav-elements" onclick="scrollToAbout()">About</li>
+      <li class="nav-elements" onclick="scrollToSkills()">Skills</li>
+      <li class="nav-elements" onclick="scrollToWork()">Projects</li>
+      <li class="nav-elements" onclick="scrollToContact()"> Contact</li>
+    </ul>
+  </nav>
+  <div class="main-box">
+    <!-- Info and PFP Starts here -->
+    <div class="pfpinfobox">
+      <div class="info slideinleft">
+        <!-- Slide in from Left -->
+        <h1>HI,</h1>
+        <h1>I'm Debdeep Bose</h1>
+        <h3>
+          I'm Passionate About Software Development<br />
+          And I Like To Build Features From Ground Up
+        </h3>
+        <button class="about-me-btn" onclick="scrollToAbout()">About Me</button>
+        <div class="q_abt">
+          
+          <button class="qabtb slideinright" onclick="window.open('https://linkedin.com/in/debdeep-bose-0a8a47303', '_blank');">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+              <g fill="#00a6ff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M24,4h-18c-1.105,0 -2,0.895 -2,2v18c0,1.105 0.895,2 2,2h18c1.105,0 2,-0.895 2,-2v-18c0,-1.105 -0.895,-2 -2,-2zM10.954,22h-2.95v-9.492h2.95zM9.449,11.151c-0.951,0 -1.72,-0.771 -1.72,-1.72c0,-0.949 0.77,-1.719 1.72,-1.719c0.948,0 1.719,0.771 1.719,1.719c0,0.949 -0.771,1.72 -1.719,1.72zM22.004,22h-2.948v-4.616c0,-1.101 -0.02,-2.517 -1.533,-2.517c-1.535,0 -1.771,1.199 -1.771,2.437v4.696h-2.948v-9.492h2.83v1.297h0.04c0.394,-0.746 1.356,-1.533 2.791,-1.533c2.987,0 3.539,1.966 3.539,4.522z"></path></g></g>
+              </svg>
+          </button>
+          
+          <button class="qabtb slideinright" onclick="window.open('https://github.com/DebdeepBose', '_blank');">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+              <g fill="#00a6ff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.33333,5.33333)"><path d="M24,4c-11.02793,0 -20,8.97207 -20,20c0,11.02793 8.97207,20 20,20c11.02793,0 20,-8.97207 20,-20c0,-11.02793 -8.97207,-20 -20,-20zM24,7c9.40662,0 17,7.59339 17,17c0,7.66536 -5.04306,14.12252 -12,16.25195v-5.11523c0,-1.91008 -1.10068,-3.5481 -2.69141,-4.36328c3.13805,-0.60035 5.72121,-2.3751 6.93703,-4.76606c1.21582,-2.39096 0.9149,-5.10432 -0.80812,-7.28668c0.44354,-1.36529 0.93902,-3.76003 -0.23828,-5.64453c-2.26987,0 -3.73455,1.55591 -4.43359,2.52344c-1.19501,-0.39258 -2.47379,-0.5962 -3.76562,-0.59961c-1.29267,0.00115 -2.5728,0.20278 -3.76953,0.59375c-0.70074,-0.96798 -2.16424,-2.51758 -4.42969,-2.51758c-1.35107,2.16264 -0.51586,4.48839 -0.06836,5.4375c-1.84039,2.17401 -2.23014,4.93209 -1.04286,7.37992c1.18727,2.44783 3.80041,4.27375 6.99208,4.88571c-1.30614,0.67319 -2.28436,1.89475 -2.58398,3.37695h-1.31445c-1.297,0 -1.80095,-0.52702 -2.50195,-1.41602c-0.692,-0.889 -1.43608,-1.48638 -2.33008,-1.73437c-0.482,-0.051 -0.80672,0.31563 -0.38672,0.64063c1.419,0.966 1.51694,2.54703 2.08594,3.58203c0.518,0.932 1.5793,1.77148 2.7793,1.77148h1.57031v3.25195c-6.95694,-2.12943 -12,-8.58659 -12,-16.25195c0,-9.40661 7.59339,-17 17,-17z"></path></g></g>
+              </svg>
+          </button>
+          
+          <button class="qabtb slideinright" onclick="window.open('https://leetcode.com/u/DebdeepB03/', '_blank');">
+            <svg class="lc" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+              <g fill="#00a6ff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(16,16)"><path d="M10.44727,0.26563c-0.13004,0.00413 -0.25335,0.05878 -0.34375,0.15234l-4.44727,4.44922l-2.56055,2.55859c-0.05137,0.05015 -0.09134,0.11076 -0.11719,0.17773c-1.20865,1.37039 -1.19195,3.4604 0.11719,4.76953l2.56055,2.56055c1.36138,1.36138 3.58588,1.36138 4.94727,0l2.25,-2.25c0.12632,-0.12664 0.17547,-0.31106 0.12895,-0.48378c-0.04653,-0.17271 -0.18167,-0.30748 -0.35451,-0.35354c-0.17284,-0.04605 -0.35712,0.00361 -0.48342,0.13028l-2.25,2.25c-0.97862,0.97862 -2.55263,0.97862 -3.53125,0l-2.56055,-2.56055c-0.97862,-0.97862 -0.97862,-2.55459 0,-3.5332l2.56055,-2.55859c0.97862,-0.97862 2.55263,-0.97862 3.53125,0l2.25,2.25c0.19524,0.19578 0.51223,0.19622 0.70801,0.00098c0.19578,-0.19524 0.19622,-0.51223 0.00098,-0.70801l-2.25,-2.25c-0.69283,-0.69282 -1.60914,-1.02407 -2.52148,-1.01172l2.73047,-2.73047c0.14893,-0.14387 0.19378,-0.36466 0.11278,-0.55523c-0.08099,-0.19058 -0.27107,-0.31152 -0.47802,-0.30414zM7.32813,9.40039c-0.18031,-0.00254 -0.34803,0.09219 -0.43893,0.24794c-0.0909,0.15575 -0.0909,0.34837 0,0.50412c0.0909,0.15575 0.25862,0.25049 0.43893,0.24794h6.90039c0.18031,0.00254 0.34803,-0.09219 0.43893,-0.24794c0.0909,-0.15575 0.0909,-0.34837 0,-0.50412c-0.0909,-0.15575 -0.25862,-0.25049 -0.43893,-0.24794z"></path></g></g>
+              </svg>
+          </button>
+          
+          <button class="qabtb slideinright" onclick="window.location.href='https://linkedin.com/in/debdeep-bose-0a8a47303';">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256">
+              <g fill="#00a6ff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M25,2c12.703,0 23,10.297 23,23c0,12.703 -10.297,23 -23,23c-12.703,0 -23,-10.297 -23,-23c0,-12.703 10.297,-23 23,-23zM32.934,34.375c0.423,-1.298 2.405,-14.234 2.65,-16.783c0.074,-0.772 -0.17,-1.285 -0.648,-1.514c-0.578,-0.278 -1.434,-0.139 -2.427,0.219c-1.362,0.491 -18.774,7.884 -19.78,8.312c-0.954,0.405 -1.856,0.847 -1.856,1.487c0,0.45 0.267,0.703 1.003,0.966c0.766,0.273 2.695,0.858 3.834,1.172c1.097,0.303 2.346,0.04 3.046,-0.395c0.742,-0.461 9.305,-6.191 9.92,-6.693c0.614,-0.502 1.104,0.141 0.602,0.644c-0.502,0.502 -6.38,6.207 -7.155,6.997c-0.941,0.959 -0.273,1.953 0.358,2.351c0.721,0.454 5.906,3.932 6.687,4.49c0.781,0.558 1.573,0.811 2.298,0.811c0.725,0 1.107,-0.955 1.468,-2.064z"></path></g></g>
+              </svg>
+          </button>
+
+        </div>
+      </div>
+      <div class="pfp slideinright">
+        <!-- Slide in from Right -->
+        <div class="circle4border">
+          <div class="circle4pic">
+            <img src="pfp1.png">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Info and PFP Ends here -->
+
+    <!--About Section Starts Here-->
+    <div id="about-me" class="about-box slideinleft">
+      <!-- Slide in from Left -->
+      <div class="abtheading">
+        <img src="boutme.png" class="about-icon " />
+        <h1>About Me</h1>
+      </div>
+      <div class="abtcontent">
+        <div class="abt-img sup2dwn ">
+          <!-- Slide in from Left -->
+          <img src="../Portfolio2/dimg.jpg" />
+        </div>
+        <div class="abt-text slideinright">
+          <!-- Slide in from Right -->
+          <h2>Hi There, I'm Debdeep</h2>
+          <h3>
+            I'm a passionate software developer from West Bengal. I love turning
+            ideas into reality through code, whether it's building applications,
+            solving complex problems, or diving deep into Data Structures and
+            Algorithms. Coding isn't just a skill for me, it's a way to
+            challenge myself, think critically, and continuously learn. I thrive
+            on problem-solving and enjoy tackling DSA challenges that push my
+            logical thinking to new heights. Always eager to explore new
+            technologies and refine my craft, I'm on a mission to create
+            efficient, scalable, and impactful software solutions.
+          </h3>
+
+          <!-- Modified Button with Download Icon -->
+          <button class="cv-btn" id="download-resume-btn">
+            <span class="button__text">Get Resume</span>
+            <span class="button__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 35 35"
+                class="svg"
+              >
+                <path
+                  d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"
+                ></path>
+                <path
+                  d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"
+                ></path>
+                <path
+                  d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"
+                ></path>
+              </svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--About Section Ends Here-->
+
+    <div id="scroll-skill"></div>
+    <div id="my-skill" class="skillbox slideinright">
+      <div class="skilllogo">
+        <div class="banner">
+          <div class="center-text"> MY SKILLS</div>
+          <div class="slider" style="--quantity: 14">
+            <div class="item" style="--position: 1">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+                alt="C++ Logo"
+              />
+            </div>
+            <div class="item" style="--position: 2">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                alt="Java Logo"
+              />
+            </div>
+            <div id="htmlog" class="item" style="--position: 3">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                alt="HTML Logo"
+              />
+            </div>
+            <div class="item" style="--position: 4">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                alt="CSS Logo"
+              />
+            </div>
+            <div class="item" style="--position: 5">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                alt="JS Logo"
+              />
+            </div>
+            <div class="item" style="--position: 6">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL Logo">
+            </div>
+            <div class="item" style="--position: 7">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Logo">
+            </div>
+            <div class="item" style="--position: 8">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C Logo">
+            </div>
+            <div class="item" style="--position: 9">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git Logo">
+            </div>
+            <div class="item" style="--position: 10">
+              <img src="github.png" alt="GitHub Logo">
+            </div>
+            <div class="item" style="--position: 11">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" alt="jQuery Logo">
+            </div>
+            <div class="item" style="--position: 12">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Logo">
+            </div>
+            <div class="item" style="--position: 13">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS Logo">
+            </div>
+            <!-- <div class="item" style="--position: 14">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB Logo">
+            </div> -->
+            <!-- <div class="item" style="--position: 15">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg" alt="Node.js Wordmark Logo">
+            </div> -->
+            <!-- <div class="item" style="--position: 16">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js Logo">
+            </div> -->
+            <div class="item" style="--position: 14; margin-top: 3px;">
+              <i class="devicon-swiper-original colored" style="font-size: 65px;" ></i>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Work/Project Starts Here-->
+    <div class="workbox slideinleft" id="scroll-work">
+      <div class="work-heading">
+        <img src="lap.svg" class="sp-icon" />
+        <h1>My Projects</h1>
+      </div>
+    
+      <div class="proj-wrapper">
+        <div class="megabox">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="BMIpic.png" />
+                <div class="imginfo">A Simple BMI Calculator That Takes In Height And Weight And Calculates BMI</div>
+                <button class="vi slideinleft" onclick="window.location.href=' https://debdeepbose.github.io/BMI/';">View</button>
+                <button class="co slideinright" onclick="window.location.href='https://github.com/DebdeepBose/BMI';">Code</button>
+
+              </div>
+              <div class="swiper-slide">
+                <img src="calcfr.png" />
+                <div class="imginfo">A Basic Calculator With A Switch Option For Scientific Mode And Complex Calculations</div>
+                <button class="vi slideinleft" onclick="window.location.href=' https://debdeepbose.github.io/Calculator/';">View</button>
+                <button class="co slideinright" onclick="window.location.href='https://github.com/DebdeepBose/Calculator';">Code</button>
+              </div>
+              <div class="swiper-slide">
+                <img src="bubble.png" />
+                <div class="imginfo">A Bubble-Popping Game that has a timer , score count and total count of the bubbles hit.</div>
+                <button class="vi slideinleft" onclick="window.location.href='https://debdeepbose.github.io/Burst-Pop/';">View</button>
+                <button class="co slideinright" onclick="window.location.href='https://github.com/DebdeepBose/Burst-Pop';">Code</button>
+              </div>
+              <div class="swiper-slide">
+                <img src="csoon.jpg" alt="Coming Soon"/>
+                <button class="vi slideinleft">View</button>
+                <button class="co slideinright">Code</button>
+                
+              </div>
+              <div class="swiper-slide">
+                <img src="csoon.jpg" alt="Coming Soon"/>
+                <button class="vi slideinleft">View</button>
+                <button class="co slideinright">Code</button>
+              </div>
+              
+              <div class="swiper-slide">
+                <img src="stopwatch.png" />
+                <div class="imginfo">A simple stopwatch with basic functions like Start, Pause, Stop And Reset Function</div>
+                <button class="vi slideinleft" onclick="window.location.href='https://debdeepbose.github.io/Stopwatch/';">View</button>
+                <button class="co slideinright" onclick="window.location.href='https://github.com/DebdeepBose/Stopwatch';">Code</button>
+              </div>
+              <div class="swiper-slide">
+                <img src="csoon.jpg" alt="Coming Soon"/>
+                <button class="vi slideinleft">View</button>
+                <button class="co slideinright">Code</button>
+              </div>
+              <div class="swiper-slide">
+                <img src="csoon.jpg" alt="Coming Soon"/>
+                <button class="vi slideinleft">View</button>
+                <button class="co slideinright">Code</button>
+              </div>
+              <div class="swiper-slide">
+                <img src="csoon.jpg" alt="Coming Soon"/>
+                <button class="vi slideinleft">View</button>
+                <button class="co slideinright">Code</button>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        
+  
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
+    
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            initialSlide: Math.floor(document.querySelectorAll('.swiper-slide').length / 2), // Set middle slide as default
+            coverflowEffect: {
+              rotate: 50,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: true,
+            },
+            pagination: {
+            el: ".swiper-pagination",
+            },
+          });
+          </script>
+      </div>
+    </div>
+    <div  id="scroll-contact"></div>
+    <div class="contactbox slideinleft">
+  <div class="contact-heading">
+    <img src="add.png" class="about-icon2" />Let's Connect
+  </div>
+
+  <div class="contact-info">
+    <div class="input-container">
+      <img src="name_icon.svg" alt="user icon">
+      <input class="name" id="name" type="text" placeholder="Enter Your Name" autocomplete="off" />
+    </div>
+    
+    <div class="input-container">
+      <img src="msg_icon.svg" alt="message icon">
+      <input class="msg" id="message" type="text" placeholder="Enter Your Message" autocomplete="off" />
+    </div>
+    
+    <div class="input-container">
+      <img src="mail_icon.svg" alt="email icon">
+      <input class="email" id="email" type="email" placeholder="Enter Your Email" autocomplete="off" />
+    </div>
+
+    <button class="shoot" id="sendBtn">
+      <span>Send</span>
+      <div class="svg-wrapper">
+        <svg height="20" width="20" viewBox="0 0 24 24" fill="none" stroke="cyan" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
+      </div>
+    </button>
+
+    <!-- Loading Message -->
+    <div id="loading-message" style="display: none;">
+      <p>Sending...</p>
+    </div>
+
+    <!-- Success Message -->
+    <div id="success-message" style="display: none;">
+      <h3>Message Sent Successfully!</h3>
+    </div>
+  </div>
+</div>
+
+    
+    
+
+    </div>
+        
+
+     
+<hr class="hrfoot">
+
+<footer class="foot">
+  <div class="footbox">
+    <div class="footname">
+      <div class="foottitle">
+        <span class="foot-span">Contact Info</span><br>
+        <ul class="titl-ul">
+          <li class="foot-li"><i class="fas fa-phone-alt"></i> +91 7439299792</li>
+          <li class="foot-li"><i class="fas fa-envelope"></i> dbworkofficial@gmail.com</li>
+          <li class="foot-li"><i class="fas fa-map-marker-alt"></i> Howrah, India - 711315</li>
+        </ul>
+      </div>
+      <div class="follow-me">
+        <span class="foot-span">Follow Me</span><br>
+        <div class="foot-links">
+          <a href="https://github.com/DebdeepBose" target="_blank">
+            <i class="devicon-github-original"></i>
+          </a>
+          <a href="https://linkedin.com/in/debdeep-bose-0a8a47303" target="_blank">
+            <i class="devicon-linkedin-plain"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="ql">
+      <div class="link-list">
+        <ul class="foot-ul">
+          <li class="foot-li top-ql"><i class="fas fa-link"></i> Quick Links</li>
+          <li class="foot-li" onclick="scrollToHome()"><i class="fas fa-home"></i> Home</li>
+          <li class="foot-li" onclick="scrollToAbout()"><i class="fas fa-user"></i> About</li>
+          <li class="foot-li" onclick="scrollToSkills()"><i class="fas fa-cogs"></i> Skills</li>
+          <li class="foot-li" onclick="scrollToWork()"><i class="fas fa-briefcase"></i> Projects</li>
+          <li class="foot-li" onclick="scrollToContact()"><i class="fas fa-envelope"></i> Contact</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<div class="footer-bottom">
+  <span><i class="fas fa-hand-paper"></i> By Debdeep</span>
+</div>
+
+</footer>
+
+<script>
+  document.getElementById("sendBtn").addEventListener("click", function () {
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    // Disable input fields and button
+    document.getElementById("name").disabled = true;
+    document.getElementById("email").disabled = true;
+    document.getElementById("message").disabled = true;
+    document.getElementById("sendBtn").disabled = true;
+
+    // Show loading message
+    document.getElementById("loading-message").style.display = "flex";
+
+    emailjs.send("service_e9e08iu", "template_7kd6dvj", {
+      name: name,
+      email: email,
+      message: message,
+    }).then(function(response) {
+      // Hide loading and show success
+      document.getElementById("loading-message").style.display = "none";
+      setTimeout(function() {
+        document.getElementById("success-message").style.display = "flex";
+      }, 2000);
+
+      // Reset everything after some time
+      setTimeout(function() {
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+        document.getElementById("name").disabled = false;
+        document.getElementById("email").disabled = false;
+        document.getElementById("message").disabled = false;
+        document.getElementById("sendBtn").disabled = false;
+        document.getElementById("success-message").style.display = "none";
+      }, 5000);
+    }, function(error) {
+      document.getElementById("loading-message").style.display = "none";
+      alert("Failed to send message. Try again!");
+      console.error("EmailJS Error:", error);
+    });
+  });
+
+  // Resume download
+  document.getElementById("download-resume-btn").addEventListener("click", function () {
+    const link = document.createElement("a");
+    link.href = "../Portfolio2/Debdeep_Bose Resume.pdf"; // Update path if needed
+    link.download = "Debdeep_Bose Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
+</script>
+
+
+</body>
+
+<script src="pjs.js"></script>
+
+
+</html>
