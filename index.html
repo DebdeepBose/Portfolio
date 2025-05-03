@@ -404,46 +404,69 @@
 
 <script>
   document.getElementById("sendBtn").addEventListener("click", function () {
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const message = document.getElementById("message").value.trim();
 
   
-    document.getElementById("name").disabled = true;
-    document.getElementById("email").disabled = true;
-    document.getElementById("message").disabled = true;
-    document.getElementById("sendBtn").disabled = true;
+  if (!name) {
+    alert("Please enter your name.");
+    return;
+  }
+
+  if (!email) {
+    alert("Please enter your email.");
+    return;
+  }
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert("Please enter a valid email address.");
+    return;
+  }
+
+  if (!message) {
+    alert("Please enter your message.");
+    return;
+  }
+
+ 
+  document.getElementById("name").disabled = true;
+  document.getElementById("email").disabled = true;
+  document.getElementById("message").disabled = true;
+  document.getElementById("sendBtn").disabled = true;
 
 
-    document.getElementById("loading-message").style.display = "flex";
+  document.getElementById("loading-message").style.display = "flex";
 
-    emailjs.send("service_e9e08iu", "template_7kd6dvj", {
-      name: name,
-      email: email,
-      message: message,
-    }).then(function(response) {
+  emailjs.send("service_e9e08iu", "template_7kd6dvj", {
+    name: name,
+    email: email,
+    message: message,
+  }).then(function(response) {
 
-      document.getElementById("loading-message").style.display = "none";
-      setTimeout(function() {
-        document.getElementById("success-message").style.display = "flex";
-      }, 2000);
+    document.getElementById("loading-message").style.display = "none";
+    setTimeout(function() {
+      document.getElementById("success-message").style.display = "flex";
+    }, 2000);
 
-      setTimeout(function() {
-        document.getElementById("name").value = "";
-        document.getElementById("email").value = "";
-        document.getElementById("message").value = "";
-        document.getElementById("name").disabled = false;
-        document.getElementById("email").disabled = false;
-        document.getElementById("message").disabled = false;
-        document.getElementById("sendBtn").disabled = false;
-        document.getElementById("success-message").style.display = "none";
-      }, 5000);
-    }, function(error) {
-      document.getElementById("loading-message").style.display = "none";
-      alert("Failed to send message. Try again!");
-      console.error("EmailJS Error:", error);
-    });
+ 
+    setTimeout(function() {
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("message").value = "";
+      document.getElementById("name").disabled = false;
+      document.getElementById("email").disabled = false;
+      document.getElementById("message").disabled = false;
+      document.getElementById("sendBtn").disabled = false;
+      document.getElementById("success-message").style.display = "none";
+    }, 5000);
+  }, function(error) {
+    document.getElementById("loading-message").style.display = "none";
+    alert("Failed to send message. Try again!");
+    console.error("EmailJS Error:", error);
   });
+});
 
   document.getElementById("download-resume-btn").addEventListener("click", function () {
     const link = document.createElement("a");
